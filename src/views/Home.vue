@@ -1,13 +1,15 @@
 <template>
-  <HelloWorld />
+  <v-app>
+    <Navbar />
+    <Footer />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
-
 export default {
   components: {
-    HelloWorld,
+    Navbar: () => import('../components/layouts/navbar.vue'),
+    Footer: () => import('../components/layouts/footer.vue')
   },
 };
 </script>
