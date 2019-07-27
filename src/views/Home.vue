@@ -2,7 +2,9 @@
   <v-app>
     <Navbar />
     <Footer />
+    <router-view></router-view>
   </v-app>
+  
 </template>
 
 <script>
