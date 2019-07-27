@@ -9,15 +9,7 @@
 export default {
   components: {
    
-  },
-  mounted(){
-        if(token){
-            let authMenu=[{
-                name:"Logout", route: "Logout"
-            }]
-            this.menus = authMenu;
-            
-        }
-    }
+  }
+  
 };
 </script>
