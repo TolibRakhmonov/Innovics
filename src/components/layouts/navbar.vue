@@ -9,6 +9,7 @@
 
             <v-toolbar-items class="hidden-sm-and-down">
                 <v-btn text v-for="(menu,index) in menus" :key="index" :to={name:menu.route}>{{menu.name}}</v-btn>
+                <v-btn text @click="getInfo()" >Userinfo</v-btn>
             </v-toolbar-items>
     </v-toolbar>
     </div>
@@ -25,6 +26,7 @@ export default {
             ]
         }
     }
+   
 
 }
 </script>

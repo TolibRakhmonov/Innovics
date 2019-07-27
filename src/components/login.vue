@@ -26,10 +26,11 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Login"
-                    name="login"
+                    label="E-mail"
+                    name="email"
                     prepend-icon="person"
                     type="text"
+                    v-model="email"
                   ></v-text-field>
 
                   <v-text-field
@@ -38,12 +39,13 @@
                     name="password"
                     prepend-icon="lock"
                     type="password"
+                    v-model="password"
                   ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary">Login</v-btn>
+                <v-btn color="primary" @click="login">Login</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
@@ -54,6 +56,15 @@
 
 <script>
 export default {
+data(){
+    return{
+        email: null,
+        password: null
+    }
+},
+methods:{
+    
+}
 
 }
 </script>

@@ -26,10 +26,12 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="e-mail"
+                    label="E-mail"
                     name="email"
                     prepend-icon="person"
-                    type="text"
+                    type="email"
+                    v-model="email"
+                    required
                   ></v-text-field>
 
                   <v-text-field
@@ -38,12 +40,14 @@
                     name="password"
                     prepend-icon="lock"
                     type="password"
+                    v-model="password"
+                    required
                   ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary">Login</v-btn>
+                <v-btn color="primary" @click="register">Sign Up</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
@@ -53,7 +57,38 @@
 </template>
 
 <script>
+import { access } from 'fs';
 export default {
+    data(){
+        return{
+            email: null,
+            password: null
+        }
+    },
+    methods: {
+        register(){
+            axios.post('/register', {email: this.email, password: this.password})
+           
+            .then((response) => {
+                console.log(response);
+                let accessToken = response.data.payload;
+                localStorage.setItem('token', accessToken);
+                localStorage.setItem('user', response.data.user);
+            })
+            .catch((error) =>{
+                console.log(error);
+            })
+         },
+          methods:{
+         getInfo(){
+             axios.get('/me')
+             .then(response =>{
+                 console.log(response);
+             })
+         }
+    }
+        
+    }
 
 }
 </script>
