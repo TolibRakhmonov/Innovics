@@ -10,7 +10,7 @@ window.axios = axios
 window.token = localStorage.getItem('token');
 
 axios.defaults.baseURL = 'https://innovics.herokuapp.com/v1/users';
-axios.defaults.headers.common['Authorization'] = "Bearer " + token;
+axios.defaults.headers.common['x-auth-token'] = token;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 Vue.config.productionTip = false
 

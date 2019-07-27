@@ -19,19 +19,18 @@
                 dark
                 flat
               >
-                <v-toolbar-title> Sign Up</v-toolbar-title>
+                <v-toolbar-title>Login</v-toolbar-title>
                 <v-spacer></v-spacer>
                 
               </v-toolbar>
               <v-card-text>
-                <v-form @submit.prevent="$store.dispatch('register', {email, password})">
+                <v-form>
                   <v-text-field
                     label="E-mail"
                     name="email"
                     prepend-icon="person"
-                    type="email"
+                    type="text"
                     v-model="email"
-                    required
                   ></v-text-field>
 
                   <v-text-field
@@ -41,33 +40,35 @@
                     prepend-icon="lock"
                     type="password"
                     v-model="password"
-                    required
                   ></v-text-field>
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn color="primary" type="submit">Sign Up</v-btn>
-                    </v-card-actions>
                 </v-form>
               </v-card-text>
-              
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" @click="login">Login</v-btn>
+              </v-card-actions>
             </v-card>
           </v-flex>
         </v-layout>
       </v-container>
+      <v-flex xs12 sm8 md4>
+          <h3>You are logged out</h3>
+      </v-flex>
     </v-app>
 </template>
 
 <script>
-import { access } from 'fs';
 export default {
-    data(){
-        return{
-            email: null,
-            password: null
-        }
+data(){
+    return{
+        email: null,
+        password: null
     }
-        
-    }
+},
+created(){
+    localStorage.removeItem('token');
+}
+}
 </script>
 
 <style>
