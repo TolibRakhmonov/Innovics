@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <Navbar />
-    <Footer />
-    <router-view></router-view>
+    <h1>Home</h1>
   </v-app>
   
 </template>
@@ -10,8 +8,7 @@
 <script>
 export default {
   components: {
-    Navbar: () => import('../components/layouts/navbar.vue'),
-    Footer: () => import('../components/layouts/footer.vue')
+   
   },
 };
 </script>
