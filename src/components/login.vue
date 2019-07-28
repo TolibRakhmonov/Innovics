@@ -9,7 +9,7 @@
               <v-spacer></v-spacer>
             </v-toolbar>
             <v-card-text>
-              <v-form>
+              <v-form @submit.prevent="$store.dispatch('login', {email, password})">
                 <v-text-field
                   label="E-mail"
                   name="email"
@@ -26,12 +26,13 @@
                   type="password"
                   v-model="password"
                 ></v-text-field>
+                <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="primary" type="submit">Login</v-btn>
+            </v-card-actions>
               </v-form>
             </v-card-text>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="primary" @click="login">Login</v-btn>
-            </v-card-actions>
+            
           </v-card>
         </v-flex>
       </v-layout>
