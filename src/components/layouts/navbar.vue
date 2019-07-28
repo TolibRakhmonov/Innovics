@@ -26,7 +26,6 @@ export default {
   data() {
     return {
       menus: [
-        { name: "Home", route: "home" },
         { name: "Sign Up", route: "signup" },
         { name: "Login", route: "login" }
       ]
