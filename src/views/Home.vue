@@ -16,10 +16,16 @@
         <swiper-slide>
           <img src="@/assets/imgs/4.jpg" alt="Slider image" />
         </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/imgs/5.jpg" alt="Slider image" />
+        </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
+    </section>
+    <section class="container startup_process">
+      <img class="img-fluid" src="@/assets/imgs/startup_process.png" alt="Image" />
     </section>
   </v-app>
 </template>
@@ -33,7 +39,7 @@ export default {
         spaceBetween: 30,
         loop: true,
         autoplay: {
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false
         },
         pagination: {
@@ -51,9 +57,12 @@ export default {
 </script>
 <style scoped>
 .slider {
-  max-width: 878px;
-  max-height: 494px;
+  /* max-width: 878px;
+  max-height: 494px; */
   margin-top: 30px;
+}
+.startup_process {
+  background-color: rgb(111, 167, 204);
 }
 </style>
 
