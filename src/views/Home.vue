@@ -25,15 +25,35 @@
       <div class="d-flex flex-wrap align-content-center">
         <div class="flex_item">
           <img src="@/assets/imgs/1.jpg" alt="Image" />
+          <div class="card_text text-center">
+            <h3>Title</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iste dolorum asperiores, consequatur saepe nemo libero a, natus amet ullam excepturi deserunt rem adipisci mollitia. Vero rerum veritatis odio autem.<br>
+            <a href="#">Read more</a>
+          </div>
         </div>
         <div class="flex_item">
           <img src="@/assets/imgs/2.jpg" alt="Image" />
+           <div class="card_text text-center">
+            <h3>Title</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iste dolorum asperiores, consequatur saepe nemo libero a, natus amet ullam excepturi deserunt rem adipisci mollitia. Vero rerum veritatis odio autem.<br>
+            <a href="#">Read more</a>
+          </div>
         </div>
         <div class="flex_item">
           <img src="@/assets/imgs/3.jpg" alt="Image" />
+           <div class="card_text text-center">
+            <h3>Title</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iste dolorum asperiores, consequatur saepe nemo libero a, natus amet ullam excepturi deserunt rem adipisci mollitia. Vero rerum veritatis odio autem.<br>
+            <a href="#">Read more</a>
+          </div>
         </div>
         <div class="flex_item">
           <img src="@/assets/imgs/4.jpg" alt="Image" />
+           <div class="card_text text-center">
+            <h3>Title</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iste dolorum asperiores, consequatur saepe nemo libero a, natus amet ullam excepturi deserunt rem adipisci mollitia. Vero rerum veritatis odio autem.<br>
+            <a href="#">Read more</a>
+          </div>
         </div>
       </div>
     </section>
@@ -85,10 +105,16 @@ export default {
 }
 .flex_item{
   margin: 10px;
-  
+  background-color: rgb(234, 244, 248);
+  padding: 10px;
 }
 .flex_item img{
   border-radius: 5px;
+}
+.card_text{
+  width: 380px;
+  padding: 10px;
+
 }
 
 </style>
