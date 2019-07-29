@@ -62,7 +62,7 @@ export default {
   margin-top: 30px;
 }
 .startup_process {
-  background-color: rgb(111, 167, 204);
+  background-color: rgb(234, 244, 248);
 }
 </style>
 
