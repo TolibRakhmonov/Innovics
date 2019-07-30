@@ -1,11 +1,13 @@
 <template>
   <div>
-      <v-form v-model="valid">
+      <v-form v-model="valid" class="text-xs-center">
+        <h1 class="align text-xs-center">Form</h1>
     <v-container grid-list-xl>
       <v-layout wrap>
         <v-flex
           xs12
-          md4
+          md6
+          class="align"
         >
           <v-text-field
             v-model="firstname"
@@ -15,10 +17,12 @@
             required
           ></v-text-field>
         </v-flex>
-
+      </v-layout>
+      <v-layout>
         <v-flex
           xs12
-          md4
+          class="align"
+          md6
         >
           <v-text-field
             v-model="lastname"
@@ -28,10 +32,12 @@
             required
           ></v-text-field>
         </v-flex>
-
+      </v-layout>
+      <v-layout>
         <v-flex
           xs12
-          md4
+          md6
+          class="align"
         >
           <v-text-field
             v-model="title"
@@ -141,5 +147,6 @@
 <style scoped>
 .align {
     margin: auto !important;
+    text-align: center;
 }
 </style>

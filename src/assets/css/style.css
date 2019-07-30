@@ -1,0 +1,671 @@
+/*Fonts*/
+
+
+
+body {
+    font-family: Rubius;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    z-index: 1;
+}
+
+header .fa {
+    display: none;
+}
+
+header .subheader {
+    width: 800px;
+    margin: auto;
+}
+
+header h2 {
+    font-size: 35px;
+    text-align: center;
+}
+header .urgent{
+    display: none;
+}
+header nav {
+    
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav li a {
+    display: block;
+    padding: 20px;
+    color: #B5B5B5;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+header .active {
+    color: black;
+}
+
+/*Parralex*/
+.parralex {
+    position: relative;
+}
+.parralex>div{
+    height: 800px;
+}
+.parralex .entry {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+}
+
+.entry div {
+    position: relative;
+    width: 360px;
+    margin: auto;
+    top: 200px
+}
+
+.entry h1 {
+    text-align: center;
+}
+
+.entry img {
+    position: relative;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+.parralex2 {
+    background-image: url('../Images/Basic/imagepar2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+}
+
+/*Main*/
+.container {
+    margin: auto;
+    padding: 0;
+}
+.container .about {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about h3 {
+    color: #3182c8;
+    font-size: 40px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.about .subabout {
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.about .ab1,
+.ab2 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    max-width: 700px;
+    padding: 100px;
+}
+
+.ab2 img {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+/*Parralex2*/
+
+.parralex2 .purpose {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.parralex2 .purpose .text {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    top: 300px
+}
+
+.purpose .text h3 {
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+}
+
+.purpose .text p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Gallery*/
+
+.gallery .card {
+    width: 50%;
+    float: left;
+}
+
+.gallery .card img {
+    width: 50%;
+    ;
+    height: 400px;
+    object-fit: cover;
+    float: left;
+}
+
+.gallery .card .text {
+    width: 50%;
+    float: left;
+    height: 400px;
+    background-color: #222;
+}
+
+.gallery .card .text h3 {
+    margin-top: 160px;
+    text-align: center;
+    font-size: 40px;
+    color: #3182c8;
+}
+
+/*Samples*/
+
+.samples {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.samples h3 {
+    text-align: center;
+    width: 400px;
+    font-size: 50px;
+    color: #3182c8;
+    border-bottom: 2px solid #3182c8;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.samples p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.samples .sample {
+    position: relative;
+    width: 33.333%;
+    float: left;
+    height: 300px;
+    box-shadow: 0 0 10px;
+}
+
+.samples h4 {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    color: #3182c8;
+    font-size: 35px;
+    top: 0px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.samples .sample img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.samples h4:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: .2s;
+}
+
+/*Prices*/
+.prices {
+    background-image: url(../Images/Basic/prices.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.prices>h3 {
+    text-align: center;
+    width: 400px;
+    font-size: 50px;
+    color: #3182c8;
+    border-bottom: 2px solid #3182c8;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.prices .prices1 {
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    ;
+}
+
+.prices .price {
+    width: 350px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.prices .price1 {
+    background: inherit;
+    position: relative;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+}
+
+.prices .price1:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.price h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.price p {
+    text-align: center;
+    padding: 20px;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.price h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Footer*/
+
+footer {
+    border-top: 5px solid #3182c8;
+    background-color: #222;
+    padding: 40px;
+    color: white;
+}
+
+footer .foot {
+    width: 50%;
+    float: left;
+    max-width: 500px;
+}
+
+.foot h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.foot li {
+    list-style: none;
+}
+
+.foot li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.foot li a:hover {
+    text-decoration: underline;
+}
+
+.foot img {
+    width: 40px;
+}
+
+.foot .socials {
+    margin: auto;
+    width: 84px;
+}
+
+.foot p {
+    text-align: center;
+}
+
+/*Contacts*/
+
+.contacts {
+    width: 100%;
+    position: relative;
+}
+
+.contacts iframe {
+    width: 100%;
+    height: 700px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: -5px;
+}
+
+.contacts .contact {
+    display: none;
+    width: 400px;
+    padding: 50px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    margin-left: -190px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    background-color: white;
+}
+
+.contact h4 {
+    text-align: center;
+    color: #3182c8;
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.contacts .contact input {
+    min-width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #B5B5B5;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.contacts .contact input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.contacts .contact p {}
+
+.contacts .contact textarea {
+    border: none;
+    min-width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #B5B5B5;
+    height: 40px;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.contacts .contact textarea:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.contacts button {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    min-width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.contacts .changer {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    color: #3182c8;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile {
+    position: absolute;
+    margin: 0;
+    bottom: 0px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/*Messages*/
+.messages{
+    margin-top: 160px;
+    padding-top: 20px;
+}
+.messages .message{
+    padding: 20px;
+
+}
+.messages .s1{
+    background-color: #e8e8e8;
+    border-left: 4px solid;
+}
+.message h3 label{
+    font-size: 12px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+/*General*/
+
+.clear {
+    clear: both;
+}
+.success{
+    background-color: #228B22;
+    position: fixed;
+    width: 600px;
+    margin-left: -300px;
+    left: 50%;
+    top: 48%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.warning{
+    background-color: #B22222;
+    position: fixed;
+    width: 600px;
+    margin-left: -300px;
+    left: 50%;
+    top: 48%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+/*Media*/
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 100%;
+    }
+    header nav {
+        display: none;
+    }
+    header i.fa {
+        position: absolute;
+        right: 30px;
+        font-size: 30px;
+        top: 35px;
+        cursor: pointer;
+        display: block;
+    }
+    header .subheader {
+        width: inherit;
+    }
+    header h2{
+        display: none !important;
+    }
+    header .urgent{
+        display: inline-block !important;
+    }
+    header h2 {
+        font-size: 35px;
+        width: 200px;
+        position: relative;
+        left: 20px;
+    }
+
+    header nav li {
+        list-style: none;
+        display: block;
+        padding-left: 20px;
+    }
+    header nav li a {
+        display: block;
+        padding: 20px;
+        color: #B5B5B5;
+        text-decoration: none;
+        font-size: 16px;
+        font-style: oblique;
+        font-weight: 600;
+    }
+    /*Gallery*/
+    .gallery .card {
+        width: 100%;
+        height: 200px
+    }
+    .gallery .card img {
+        height: 200px;
+        object-fit: cover;
+        float: left;
+    }
+    .gallery .card .text {
+        height: 200px;
+    }
+    .gallery .card .text h3 {
+        margin-top: 80px;
+        font-size: 25px;
+    }
+    .s1 img{ 
+        float: left !important;
+    }
+    .s1 .text{
+        float: right !important;
+    }
+    .s2 img{ 
+        float: right !important;
+    }
+    .s2 .text{
+        float: left !important;
+    }
+    /*About*/
+    .about .ab1 {
+        width: 100%;
+        padding: 30px;
+    }
+    .about .ab2{
+        display: none;
+    }
+    /*Prices*/
+    .prices .price {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        float: none;
+    }
+    /*Parralax*/
+    .parralex>div {
+    margin-top: 0px;
+    }
+    /*Samples*/
+    .samples{
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .samples .sample{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*Contacts*/
+    .contacts iframe{
+        height: 560px;
+        overflow: hidden;
+    }
+    .contacts .contact {
+    width: 100%;
+    margin-left: 0px;
+    top: 60px;
+    left: 0;
+    height: 500px;
+    }
+    /*General*/
+    .success{
+        width: 100%;
+        margin-left: 0px;
+        left: 0;
+        top: 48%;
+    }
+    .warning{
+        width: 100%;
+        margin-left: 0px;
+        left: 0;
+        top: 48%;
+    }
+
+
+
+
+
+    
+}
