@@ -23,6 +23,7 @@ header .fa {
 header .subheader {
     width: 800px;
     margin: auto;
+    text-align: center;
 }
 
 header h2 {
@@ -32,14 +33,12 @@ header h2 {
 header .urgent{
     display: none;
 }
-header nav {
-    
-}
 
 header nav li {
     list-style: none;
     display: inline-block;
 }
+
 
 header nav li a {
     display: block;
@@ -71,7 +70,7 @@ header .active {
 
 .entry div {
     position: relative;
-    width: 360px;
+    width: 400px;
     margin: auto;
     top: 200px
 }
@@ -86,7 +85,7 @@ header .active {
 
 button a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 .parralex2 {
     background-image: url('../Images/Basic/imagepar2.jpg');
@@ -531,6 +530,9 @@ footer .foot {
     padding: 20px;
     color: white;
     text-align: center;
+}
+.own-btn button {
+    border-radius: 2px solid silver !important;
 }
 /*Media*/
 
